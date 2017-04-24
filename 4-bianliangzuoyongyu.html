@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>nihao</h1>
+	<script>
+		//函数外部不能访问函数内部的变量，内部可以访问外部变量。
+		var h = document.querySelector('h1');
+	
+		// var str = "hello";
+		// function fun(){
+		// 	var num = 10;
+		// 	console.log(str);
+		// }
+		
+		// h.onclick = function(){
+		// 	console.log(num);
+		// }
+
+		//全局变量，局部变量
+		//script变量下级的变量是全局变量。
+		//如果声明一个变量不用var，那么这个变量是全局变量。
+		// var str = "hello";
+		// function fun(){
+		// 	var num = 10;
+		// }
+		// fun();
+		// console.log(num);
+		// function fun(){	
+		// 	var num = 10;
+		// }
+		// var num = 100;
+		// //window 全局对象
+		// fun();
+		// console.log(num);
+
+		// function fun(){
+		// 	alert('你好')
+		// }
+
+		//window对象的属性
+		// window.setInterval(function(){
+		// 	console.log('hehe')
+		// },1000)
+
+		// var num = 10;
+
+
+		// var out = 10;
+		// function fun(){
+		// 	var myin = 100;
+		// 	function infun(){
+		// 		var myinin = 1000;
+		// 		var myin = 10000;
+		// 		function ininfun(){
+		// 			console.log(myin);
+
+		// 		}
+		// 		return ininfun;
+		// 	}
+		// 	return infun
+		// }
+
+		// fun()()();
+
+		// if(true){
+		// 	let num = 100;
+		// }
+		// console.log(num);
+
+	</script>
+</body>
+</html>

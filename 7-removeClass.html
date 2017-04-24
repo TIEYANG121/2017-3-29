@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 class="red blue yellow black">hello javascript</h1>
+	<script>
+		function removeClass(dom,str){
+			var arr = dom.className.split(" ");
+			for(var i = 0;i<arr.length;i++){
+				if(arr[i] === str){
+					arr.splice(i,1);
+
+				}
+			}
+			dom.className = arr.join(" ");
+		}
+
+		var h = document.querySelector('h1');
+		removeClass(h,"blue");
+		//断点
+	</script>
+</body>
+</html>

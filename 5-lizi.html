@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		// var num = 10;
+
+		// function fun(x){
+		// 	x = 100;
+		// 	return x
+		// }
+
+
+		// console.log(fun());
+
+		var obj = {};
+		obj.num = 10;
+
+		function fun(x){
+			x.num = 100;
+			return x
+		}
+
+		fun(obj);
+
+		console.log(obj.num);
+
+	</script>
+</body>
+</html>
